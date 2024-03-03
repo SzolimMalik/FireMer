@@ -1,1 +1,1 @@
-"# FireMer" 
+FireMer is a work-in-progress timer that will measure the amount time left until the nearest event related to character named Firefly from Honkai: Star Rail.
