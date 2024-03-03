@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styl.css">
+        <link rel="icon" href="./img/FFphoto.png">
+        <title>
+            FireTimer
+        </title>
+        <script src="./JS/main.js" defer></script>
+        <script src="./clock/js/player.js"></script>
+        <script>
+        </script>
+    </head>
+    <body>
+        <img src="./img/crt.png" style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); height: 100%;">
+        <div id="timer" class="D">
+            <img class="D" src="./img/FFhead-c.png">
+            <h1>Firefly will be released in:</h1><br>
+            <div id="face">
+                <div class="D">68:10:32:48</div>
+                <div class="F">
+                    <img src="./img/numbers/0.png"><img src="./img/numbers/0.png"><span>:</span><img src="./img/numbers/0.png"><img src="./img/numbers/0.png"><span>:</span><img src="./img/numbers/0.png"><img src="./img/numbers/0.png"><span>:</span><img src="./img/numbers/0.png"><img src="./img/numbers/0.png">
+                </div>
+                <div class="A" id="clockbg" style="width:200px; height:200px; background-image: url(./clock/image/clockbg.png);">
+                    <img src="./clock/image/min.png" id="min">
+                    <img src="./clock/image/hr.png" id="hr" style="position: relative; transform: translateY(-216px); z-index: 2;">
+                    <img src="./clock/image/sec.png" id="s" style="position: relative; transform: translateY(-431px); visibility: hidden; z-index: 3;">
+                </div>
+            </div>
+        </div>
+        <div id="settings">
+            Watch Face:<br>
+            <form name="settings" onchange="WatchFace(this.WF.value)">
+                <input type="radio" value="D" name="WF">Digital<br>
+                <input type="radio" value="F" name="WF">Flip<br>
+                <input type="radio" value="A" name="WF">Analog<br>
+                <span class="A" style="display: none;">
+                    <input type="checkbox" id="styler" class="1" onclick="stylech()">Change clock style</button><br>
+                    <input type="checkbox" id="scon" style="clear: both;" onclick="stylechkbx()">Seconds hand<br>
+                </span>
+            </form>
+        </div>
+    </body>
+</html>

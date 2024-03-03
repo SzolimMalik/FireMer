@@ -1,0 +1,51 @@
+*{
+    font-family: "Bahnschrift", 'Arial';
+    text-align: center;
+}
+html{
+    background: no-repeat center 0% url("./img/back.png"), #241515;
+}
+#timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+}
+#timer img{
+    border-radius: 20px;
+}
+.D img{
+    width: 300px;
+    box-shadow: 0px 0px 10px cyan;
+}
+.D{
+    color: cyan;
+    text-shadow: cyan 0 0 10px;
+}
+.F, .A{
+    color: white;
+    text-shadow: white 0 0 10px;
+}
+.F img{
+    height: 125px;
+    width: auto;
+    box-shadow: 0px 0px 10px #eacfb3;
+}
+#timer span{
+    position: relative;
+    bottom: 50px;
+    line-height: 125px;
+    
+}
+.A #face{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+#settings{
+    position: absolute;
+    right: 0%;
+    margin: 30px;
+    color: white;
+}
