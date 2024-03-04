@@ -29,4 +29,9 @@ function hide(class1, class2){
         h2[index].style.display = "none";
     }
 }
-WatchFace("D");
+setTimeout(() => {
+    document.getElementById("penaintro").style.display = "none";
+    document.getElementById("timer").style.display = "initial";
+    WatchFace("D");
+    document.getElementById("timer").className = "intro1 D";
+}, 7900);

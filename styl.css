@@ -5,6 +5,12 @@
 html{
     background: no-repeat center 0% url("./img/back.png"), #241515;
 }
+#penaintro{
+    animation: 2s ease-in-out 4 alternate boot;
+}
+.intro1{
+    animation: 2s ease-in-out 1 forwards boot;
+}
 #timer{
     position: absolute;
     top: 50%;
@@ -48,4 +54,12 @@ html{
     right: 0%;
     margin: 30px;
     color: white;
+}
+@keyframes boot{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
